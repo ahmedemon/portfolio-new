@@ -1,289 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejaz Gazi - Web Developer Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Animate.css -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Ejaz Gazi | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand animate__animated animate__fadeInLeft" href="#home">Ejaz Gazi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Ejaz<span>Gazi</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 text-center">
-                    <h1 class="animate__animated animate__fadeInDown">Hi, I'm Ejaz Gazi</h1>
-                    <p class="animate__animated animate__fadeInUp animate__delay-1s">Professional Web Developer | 4+ Years Experience</p>
-                    <div class="animate__animated animate__fadeInUp animate__delay-2s">
-                        <a href="#about" class="btn btn-custom">Learn More</a>
-                        <a href="#contact" class="btn btn-custom">Get In Touch</a>
-                    </div>
-                    <img class="position-absolute end-0 translate-middle animate__animated animate__fadeInUp animate__delay-0.5s" id="me" src="assets/me.png" alt="" style="top: 65%;">
+            <div class="hero-content">
+                <h1>Full Stack Developer & <span>UI/UX Designer</span></h1>
+                <p>I create beautiful, functional, and user-friendly web applications with modern technologies and best practices. Let's build something amazing together.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <a href="assets/Ejaz_Gazi_CV.pdf" class="btn" download aria-label="Download CV">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download CV
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title fade-in-up">About Me</h2>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="about-content fade-in-up">
-                        <h3><i class="fas fa-user"></i> Who Am I?</h3>
-                        <p>I am Ejaz Gazi, a passionate web developer who takes pride in my work and is confident in my abilities. I love exploring new technologies and continuously expanding my skill set. My goal is to create impactful web solutions that meet the needs of clients and users alike.</p>
-                        
-                        <h3 class="mt-4"><i class="fas fa-briefcase"></i> Professional Journey</h3>
-                        <p>As a Professional web developer with over 6 years of experience, I have honed my skills across a wide range of technologies and frameworks. My expertise spans from front-end development with modern frameworks to back-end systems using Laravel and PHP. I am committed to delivering high-quality, scalable solutions that drive business success.</p>
-                    </div>
-                </div>
+            <div class="section-title">
+                <h2>About Me</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title fade-in-up">Technical Skills</h2>
-            <div class="row">
-                <div class="col-lg-6 fade-in-up">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-code"></i> Front-End Development</h4>
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">jQuery</span>
-                        <span class="skill-item">Bootstrap</span>
-                        <span class="skill-item">SCSS</span>
-                        <span class="skill-item">Tailwind CSS</span>
-                        <span class="skill-item">Ajax</span>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Ejaz Gazi</h3>
+                    <p>I'm a passionate full-stack developer with over 5 years of experience building web applications. I specialize in creating responsive, performant, and accessible websites using modern technologies.</p>
+                    <p>My expertise includes PHP(Laravel, Livewire), JavaScript & jQuery, React(Basic), Vue.js(Basic), Python(Django, Flask) and various databases. I'm always eager to learn new technologies and tackle challenging problems.</p>
+                    <div class="skills">
+                        <span class="skill">PHP</span>
+                        <span class="skill">Laravel</span>
+                        <span class="skill">Livewire</span>
+                        <span class="skill">MySQL</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Vue.js</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">Django</span>
+                        <span class="skill">Flask</span>
+                        <span class="skill">AWS</span>
+                        <span class="skill">Plesk</span>
                     </div>
                 </div>
-                <div class="col-lg-6 fade-in-up">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-server"></i> Back-End Development</h4>
-                        <span class="skill-item">PHP</span>
-                        <span class="skill-item">Laravel</span>
-                        <span class="skill-item">Laravel Livewire</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">C, C++, C# (Basic)</span>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in-up">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-laptop-code"></i> Learning & Growth</h4>
-                        <span class="skill-item">React (Learning)</span>
-                        <span class="skill-item">React Native (Learning)</span>
-                        <span class="skill-item">VUE (Learning)</span>
-                        <span class="skill-item">Flutter (Learning)</span>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in-up">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-tools"></i> Tools & Software</h4>
-                        <span class="skill-item">Adobe Photoshop</span>
-                        <span class="skill-item">Adobe Illustrator</span>
-                        <span class="skill-item">MS Office</span>
-                        <span class="skill-item">Figma</span>
-                        <span class="skill-item">Canva</span>
-                        <span class="skill-item">GitHub</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title fade-in-up">Education</h2>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="education-item fade-in-up">
-                        <h4><i class="fas fa-graduation-cap"></i> Bachelor of Science & Engineering</h4>
-                        <p class="year">2023 - Present</p>
-                        <p><strong>Major:</strong> Computer Science & Engineering</p>
-                        <p>Currently pursuing advanced studies in computer science, focusing on software engineering principles, algorithms, and modern development practices.</p>
-                    </div>
-                    <div class="education-item fade-in-up">
-                        <h4><i class="fas fa-certificate"></i> Diploma in Engineering</h4>
-                        <p class="year">2016 - 2020</p>
-                        <p><strong>Major:</strong> Computer Technology</p>
-                        <p>Completed comprehensive diploma program covering fundamental and advanced concepts in computer technology, programming, and web development.</p>
-                    </div>
+                <div class="about-image">
+                    <img src="assets/me.jpg" alt="Ejaz Gazi" class="profile-img">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" style="background: #f8f9fa;">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title fade-in-up">My Projects</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-calculator"></i></div>
-                            <h5>BHisab</h5>
-                            <p>Comprehensive business accounting solution with advanced financial management features.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Platform" class="project-img">
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-featured e-commerce solution with product catalog, shopping cart, user authentication, and payment processing.</p>
+                        <div class="project-tech">
+                            <span class="tech">React</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">MongoDB</span>
+                            <span class="tech">Stripe API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
-                            <h5>Babsayee</h5>
-                            <p>Professional business management platform designed for efficiency and scalability.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App" class="project-img">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, team collaboration, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech">Vue.js</span>
+                            <span class="tech">Express</span>
+                            <span class="tech">Socket.io</span>
+                            <span class="tech">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
-                            <h5>B-Invoicing</h5>
-                            <p>Modern invoicing system with automated billing and payment tracking capabilities.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" alt="Weather Dashboard" class="project-img">
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A responsive weather application that provides current conditions and forecasts with interactive maps and charts.</p>
+                        <div class="project-tech">
+                            <span class="tech">React</span>
+                            <span class="tech">Chart.js</span>
+                            <span class="tech">Weather API</span>
+                            <span class="tech">CSS3</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-cogs"></i></div>
-                            <h5>Central Panel</h5>
-                            <p>Centralized management dashboard for multi-system administration and monitoring.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-ticket-alt"></i></div>
-                            <h5>Support Open Ticket System</h5>
-                            <p>Efficient customer support ticket management system with real-time tracking.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-comments"></i></div>
-                            <h5>Customer Support Chatting Application</h5>
-                            <p>Real-time chat application for seamless customer support communication.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-                            <h5>Multivendor Ecommerce</h5>
-                            <p>Complete ecommerce platform supporting multiple vendors with integrated payment systems.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
-                            <h5>Exchange and Pick Shopping Portal</h5>
-                            <p>Innovative shopping platform with product exchange and pickup features.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-users"></i></div>
-                            <h5>Dealer Management System</h5>
-                            <p>Comprehensive system for managing dealer networks and distribution channels.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in-up py-3">
-                    <div class="project-card">
-                        <div class="card-body">
-                            <div class="project-icon"><i class="fas fa-university"></i></div>
-                            <h5>Banking Agency Management System</h5>
-                            <p>Secure banking agency management solution with transaction tracking and reporting.</p>
-                            <p class="project-tech">PHP (Laravel), MySQL, JavaScript, jQuery, Bootstrap</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title fade-in-up">Get In Touch</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="contact-info text-center">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p>ejazgazi335198@gmail.com</p>
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Full Stack Developer</h3>
+                            <h4>Google</h4>
+                            <span class="timeline-date">2022 - Present</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Lead development of cloud-based applications serving millions of users. Mentor junior developers and implement best practices.</p>
+                            <ul class="timeline-highlights">
+                                <li>Led a team of 5 developers in building a scalable microservices architecture</li>
+                                <li>Improved application performance by 40% through code optimization</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                                <li>Collaborated with UX team to enhance user experience across platforms</li>
+                            </ul>
+                            <div class="tech-used">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Google Cloud</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="contact-info text-center">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p>+880 162-9460581</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Developer</h3>
+                            <h4>Amazon</h4>
+                            <span class="timeline-date">2020 - 2022</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Developed and maintained e-commerce platforms and internal tools for one of the world's largest online retailers.</p>
+                            <ul class="timeline-highlights">
+                                <li>Built responsive customer-facing features handling 10M+ daily users</li>
+                                <li>Reduced page load time by 30% through performance optimization</li>
+                                <li>Implemented automated testing covering 90% of codebase</li>
+                                <li>Worked in agile environment with cross-functional teams</li>
+                            </ul>
+                            <div class="tech-used">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="contact-info text-center">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location</h4>
-                        <p>Kotalipara, Gopalganj, Dhaka, Bangladesh</p>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Developer</h3>
+                            <h4>Microsoft</h4>
+                            <span class="timeline-date">2018 - 2020</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Developed user interfaces for enterprise applications and contributed to design system components.</p>
+                            <ul class="timeline-highlights">
+                                <li>Created reusable React components used across multiple projects</li>
+                                <li>Improved accessibility compliance meeting WCAG 2.1 standards</li>
+                                <li>Collaborated with backend teams on API design and integration</li>
+                                <li>Participated in code reviews and technical documentation</li>
+                            </ul>
+                            <div class="tech-used">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">SASS</span>
+                                <span class="tech-tag">Jest</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Web Developer</h3>
+                            <h4>Tech Startup Inc.</h4>
+                            <span class="timeline-date">2017 - 2018</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Built and maintained client websites and web applications in a fast-paced startup environment.</p>
+                            <ul class="timeline-highlights">
+                                <li>Developed 15+ responsive websites for various clients</li>
+                                <li>Implemented SEO best practices improving client search rankings</li>
+                                <li>Worked closely with designers to implement pixel-perfect designs</li>
+                                <li>Managed deployment and hosting for client projects</li>
+                            </ul>
+                            <div class="tech-used">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Bachelor of Science in Software Engineering</h3>
+                        <h4>NWU</h4>
+                        <span class="education-date">2023 - Present</span>
+                        <p>Concentrated on full-stack web development, algorithms, and software architecture.</p>
+                        <div class="education-highlights">
+                            <span class="highlight">Current GPA: 3.14/4.0</span>
+                            <span class="highlight">Practical experience through projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Diploma in Computer Science Technology</h3>
+                        <h4>Khulna Polytechnic Institute</h4>
+                        <span class="education-date">2016 - 2020</span>
+                        <p>Focused on various types of languages, database management, computer fundamentals, software engineering principles, gained practical experience through projects and general knowledge.</p>
+                        <div class="education-highlights">
+                            <span class="highlight">CGPA: 3.36/4.0</span>
+                            <span class="highlight">Graduated with Honors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Certifications</h3>
+                        <h4>People NTech | Bangladesh</h4>
+                        <span class="education-date">June 2020 - November 2020</span>
+                        <div class="certifications">
+                            <div class="certification">
+                                <span class="cert-name">Professional Web Development | Full Stack Development</span>
+                                <span class="cert-date">2020</span>
+                            </div>
+                        </div>
+                        <div class="education-highlights">
+                            <span class="highlight">HTML5</span>
+                            <span class="highlight">CSS3</span>
+                            <span class="highlight">JavaScript</span>
+                            <span class="highlight">jQuery</span>
+                            <span class="highlight">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Kotalipara, Gopalganj</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:ejazgazi335198@gmail.com" style="text-decoration: none; color: inherit;">ejazgazi335198@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+8801629460581" style="text-decoration: none; color: inherit;">+880 16 2946 0581</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -292,255 +382,141 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links mb-3">
-                <a href="https://github.com/ahmedemon" class="animate__animated animate__fadeIn"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ejaz-ahmed-27a2aa23a/" class="animate__animated animate__fadeIn animate__delay-1s"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/ahmed.emon335198/" class="animate__animated animate__fadeIn animate__delay-2s"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ahmedemon__/" class="animate__animated animate__fadeIn animate__delay-3s"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/8801940546604" class="animate__animated animate__fadeIn animate__delay-4s" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
             </div>
-            <p>&copy; 2024 Ejaz Gazi. All rights reserved.</p>
+            <p class="copyright">© 2023 Ejaz Gazi. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollTop"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Smooth scrolling for navigation links
-            $('a[href^="#"]').on('click', function(e) {
-                e.preventDefault();
-                var target = $(this.getAttribute('href'));
-                if(target.length) {
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 70
-                    }, 1000);
-                }
-            });
-            
-            // Navbar scroll effect
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) {
-                    $('.navbar').addClass('scrolled');
-                    $('#scrollTop').fadeIn();
-                } else {
-                    $('.navbar').removeClass('scrolled');
-                    $('#scrollTop').fadeOut();
-                }
-                
-                // Fade in elements on scroll
-                $('.fade-in-up').each(function() {
-                    var elementTop = $(this).offset().top;
-                    var viewportBottom = $(window).scrollTop() + $(window).height();
-                    
-                    if (elementTop < viewportBottom - 100) {
-                        $(this).addClass('visible');
-                    }
-                });
-            });
-            
-            // Scroll to top button
-            $('#scrollTop').click(function() {
-                $('html, body').animate({scrollTop: 0}, 800);
-            });
-            
-            // Active nav link on scroll
-            $(window).scroll(function() {
-                var scrollPos = $(document).scrollTop() + 100;
-                
-                $('section').each(function() {
-                    var currLink = $(this);
-                    var refElement = currLink;
-                    
-                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                        $('.nav-link').removeClass('active');
-                        $('.nav-link[href="#' + currLink.attr('id') + '"]').addClass('active');
-                    }
-                });
-            });
-            
-            // Typing animation for hero text
-            var heroText = "Professional Web Developer | 6+ Years Experience";
-            var heroElement = $('.hero p');
-            var originalText = heroElement.text();
-            
-            // Animate skill items on hover
-            $('.skill-item').hover(
-                function() {
-                    $(this).addClass('animate__animated animate__pulse');
+        // Particles.js initialization
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#6c63ff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#6c63ff",
+                    opacity: 0.4,
+                    width: 1
                 },
-                function() {
-                    $(this).removeClass('animate__animated animate__pulse');
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
                 }
-            );
-            
-            // Project cards hover animation
-            $('.project-card').hover(
-                function() {
-                    $(this).find('.project-icon').addClass('animate__animated animate__rotateIn');
-                },
-                function() {
-                    $(this).find('.project-icon').removeClass('animate__animated animate__rotateIn');
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
                 }
-            );
-            
-            // Education items animation on scroll
-            $('.education-item').each(function(index) {
-                $(this).css('animation-delay', (index * 0.2) + 's');
-            });
-            
-            // Counter animation for years of experience
-            function animateCounter() {
-                $('.hero p').each(function() {
-                    var text = $(this).text();
-                    if(text.includes('6+')) {
-                        var $this = $(this);
-                        var countTo = 6;
-                        var current = 0;
-                        
-                        var counter = setInterval(function() {
-                            current++;
-                            $this.text('Professional Web Developer | ' + current + '+ Years Experience');
-                            if(current >= countTo) {
-                                clearInterval(counter);
-                            }
-                        }, 200);
-                    }
-                });
             }
-            
-            // Trigger counter animation after page load
-            setTimeout(animateCounter, 2000);
-            
-            // Parallax effect for hero section
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();
-                $('.hero').css('background-position', 'center ' + (scroll * 0.5) + 'px');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
             });
-            
-            // Add pulse animation to contact info on hover
-            $('.contact-info').hover(
-                function() {
-                    $(this).addClass('animate__animated animate__pulse');
-                },
-                function() {
-                    $(this).removeClass('animate__animated animate__pulse');
+        });
+
+        // Click effect
+        document.addEventListener('click', function (e) {
+            const clickEffect = document.createElement('div');
+            clickEffect.className = 'click-effect';
+            clickEffect.style.left = e.clientX + 'px';
+            clickEffect.style.top = e.clientY + 'px';
+            document.body.appendChild(clickEffect);
+
+            setTimeout(() => {
+                clickEffect.remove();
+            }, 500);
+        });
+
+        // Dragging effect
+        let isDragging = false;
+        let startX, scrollLeft;
+        const container = document.querySelector('.container');
+
+        document.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX;
+            scrollLeft = window.pageXOffset;
+            document.body.style.cursor = 'grabbing';
+        });
+
+        document.addEventListener('mouseleave', () => {
+            isDragging = false;
+            document.body.style.cursor = 'default';
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            document.body.style.cursor = 'default';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX;
+            const walk = (x - startX) * 2;
+            window.scrollTo(scrollLeft - walk, window.pageYOffset);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
                 }
-            );
-            
-            // Animate social links on hover
-            $('.social-links a').hover(
-                function() {
-                    $(this).addClass('animate__animated animate__bounce');
-                },
-                function() {
-                    $(this).removeClass('animate__animated animate__bounce');
-                }
-            );
-            
-            // Add shake animation to buttons on hover
-            $('.btn-custom').hover(
-                function() {
-                    $(this).addClass('animate__animated animate__heartBeat');
-                },
-                function() {
-                    $(this).removeClass('animate__animated animate__heartBeat');
-                }
-            );
-            
-            // Stagger animation for project cards
-            $('.project-card').each(function(index) {
-                $(this).css({
-                    'animation': 'fadeInUp 0.6s ease forwards',
-                    'animation-delay': (index * 0.1) + 's',
-                    'opacity': '0'
-                });
             });
-            
-            // Add CSS animation keyframes
-            $('<style>')
-                .prop('type', 'text/css')
-                .html(`
-                    @keyframes fadeInUp {
-                        from {
-                            opacity: 0;
-                            transform: translateY(30px);
-                        }
-                        to {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
-                    
-                    .nav-link.active {
-                        color: #fff !important;
-                        font-weight: 600;
-                    }
-                    
-                    .nav-link.active::after {
-                        width: 100%;
-                    }
-                `)
-                .appendTo('head');
-            
-            // Loading animation
-            $('body').css('opacity', '0');
-            $('body').animate({opacity: 1}, 1000);
-            
-            // Trigger initial scroll to show fade-in elements
-            $(window).trigger('scroll');
-            
-            // Add ripple effect to buttons
-            $('.btn-custom').click(function(e) {
-                var ripple = $('<span class="ripple"></span>');
-                $(this).append(ripple);
-                
-                var x = e.pageX - $(this).offset().left;
-                var y = e.pageY - $(this).offset().top;
-                
-                ripple.css({
-                    top: y + 'px',
-                    left: x + 'px'
-                });
-                
-                setTimeout(function() {
-                    ripple.remove();
-                }, 600);
-            });
-            
-            // Add ripple CSS
-            $('<style>')
-                .prop('type', 'text/css')
-                .html(`
-                    .ripple {
-                        position: absolute;
-                        border-radius: 50%;
-                        background: rgba(255, 255, 255, 0.6);
-                        width: 0;
-                        height: 0;
-                        animation: rippleEffect 0.6s ease-out;
-                        pointer-events: none;
-                    }
-                    
-                    @keyframes rippleEffect {
-                        to {
-                            width: 500px;
-                            height: 500px;
-                            opacity: 0;
-                            margin-left: -250px;
-                            margin-top: -250px;
-                        }
-                    }
-                `)
-                .appendTo('head');
         });
     </script>
 </body>
+
 </html>
