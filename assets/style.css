@@ -737,8 +737,8 @@ footer {
 /* Click Effect */
 .click-effect {
   position: fixed;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--primary);
   pointer-events: none;
@@ -755,7 +755,30 @@ footer {
   }
   100% {
     opacity: 0;
-    transform: scale(3);
+    transform: scale(5);
+  }
+}
+
+/* Mouse Effect */
+s {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
   }
 }
 
