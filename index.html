@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejaz Gazi | Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -17,7 +18,7 @@
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">Ejaz<span>Gazi</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links mb-0">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -42,7 +43,7 @@
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                    <a href="assets/Ejaz_Gazi_CV.pdf" class="btn" download aria-label="Download CV">
+                    <a href="assets/CV_of_Ejaz_Gazi.pdf" class="btn" download="CV_of_Ejaz_Gazi.pdf" aria-label="Download CV">
                         <i class="fas fa-download" aria-hidden="true"></i> Download CV
                     </a>
                 </div>
@@ -90,15 +91,23 @@
                 <h2>My Projects</h2>
             </div>
             <div class="projects-grid">
+
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Platform" class="project-img">
+                    <div class="project-gallery" onclick="openLightbox(0, 0)">
+                        <img src="assets/projects/ecommerce/1.jpg" alt="E-commerce Platform" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>E-commerce Platform</h3>
                         <p>A full-featured e-commerce solution with product catalog, shopping cart, user authentication, and payment processing.</p>
                         <div class="project-tech">
-                            <span class="tech">React</span>
-                            <span class="tech">Node.js</span>
-                            <span class="tech">MongoDB</span>
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">Bootstrap</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">jQuery</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">Laravel</span>
+                            <span class="tech">MySQL</span>
                             <span class="tech">Stripe API</span>
                         </div>
                         <div class="project-links">
@@ -108,7 +117,83 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App" class="project-img">
+                    <div class="project-gallery" onclick="openLightbox(1, 0)">
+                        <img src="assets/projects/erp-tc/2.jpg" alt="ERP With Inventory" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>ERP | Trade Commerce</h3>
+                        <p>An ERP solution with a inventory management feature with accounting.</p>
+                        <div class="project-tech">
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">Bootstrap</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">jQuery</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">Laravel</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:;" onclick="comingSoon()" class="project-link">Live Demo</a>
+                            <a href="https://github.com/VShowCase/nextgen-erp" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-gallery" onclick="openLightbox(2, 0)">
+                        <!-- <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="Point Of Sale | Management" class="project-img"> -->
+                        <img src="assets/projects/pos/logo.png" alt="Point Of Sale | Management" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Point Of Sale | Management</h3>
+                        <p>Point of sale solution with product catalog, user authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">Bootstrap</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">Laravel</span>
+                            <span class="tech">MySQL</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">jQuery</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:;" onclick="comingSoon()" class="project-link">Live Demo</a>
+                            <a href="https://github.com/VShowCase/empos" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-gallery" onclick="openLightbox(3, 0)">
+                        <img src="assets/projects/erp/2.jpg" alt="ERP With Inventory" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>ERP | NextGenErp</h3>
+                        <p>An ERP solution with a comprehensive inventory management feature.</p>
+                        <div class="project-tech">
+                            <span class="tech">HTML5</span>
+                            <span class="tech">CSS3</span>
+                            <span class="tech">Bootstrap</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">jQuery</span>
+                            <span class="tech">PHP</span>
+                            <span class="tech">Laravel</span>
+                            <span class="tech">Livewire</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:;" onclick="comingSoon()" class="project-link">Live Demo</a>
+                            <a href="https://github.com/VShowCase/nextgen-erp" target="_blank" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-gallery" onclick="openLightbox(4, 0)">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Task Management App" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Task Management App</h3>
                         <p>A collaborative task management application with real-time updates, team collaboration, and progress tracking.</p>
@@ -124,8 +209,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" alt="Weather Dashboard" class="project-img">
+                    <div class="project-gallery" onclick="openLightbox(5, 0)">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80" alt="Weather Dashboard" class="project-img">
+                    </div>
                     <div class="project-info">
                         <h3>Weather Dashboard</h3>
                         <p>A responsive weather application that provides current conditions and forecasts with interactive maps and charts.</p>
@@ -143,7 +231,25 @@
                 </div>
             </div>
         </div>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <button class="lightbox-close" onclick="closeLightbox()">
+                    <span style="margin-top: -10px;">&times;</span>
+                </button>
+                <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">
+                    <span style="margin-top: -18px;">&#8249;</span>
+                </button>
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+                <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">
+                    <span style="margin-top: -18px;">&#8250;</span>
+                </button>
+                <div class="lightbox-counter" id="lightbox-counter"></div>
+                <div class="thumbnail-strip" id="thumbnail-strip"></div>
+            </div>
+        </div>
     </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
@@ -154,102 +260,59 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Senior Full Stack Developer</h3>
-                            <h4>Google</h4>
+                            <h3>Full Stack Developer</h3>
+                            <h4>Soft Host IT</h4>
                             <span class="timeline-date">2022 - Present</span>
                         </div>
                         <div class="timeline-body">
-                            <p>Lead development of cloud-based applications serving millions of users. Mentor junior developers and implement best practices.</p>
+                            <p>Leading the development of scalable, cloud-based web applications serving hundreds of active users. Oversee technical direction, mentor junior developers, and implement industry best practices for performance and maintainability.</p>
                             <ul class="timeline-highlights">
-                                <li>Led a team of 5 developers in building a scalable microservices architecture</li>
-                                <li>Improved application performance by 40% through code optimization</li>
-                                <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
-                                <li>Collaborated with UX team to enhance user experience across platforms</li>
+                                <li>Architected and maintained full-stack web applications, APIs, servers, and deployment pipelines</li>
+                                <li>Developed and integrated APIs for Android and web platforms, ensuring seamless data exchange</li>
+                                <li>Enhanced application performance through efficient code optimization and caching strategies</li>
+                                <li>Collaborated with UX/UI teams to deliver intuitive and engaging user experiences</li>
+                                <li>Guided code reviews, enforced coding standards, and improved team development workflows</li>
                             </ul>
                             <div class="tech-used">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Google Cloud</span>
-                                <span class="tech-tag">Kubernetes</span>
-                                <span class="tech-tag">TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Full Stack Developer</h3>
-                            <h4>Amazon</h4>
-                            <span class="timeline-date">2020 - 2022</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Developed and maintained e-commerce platforms and internal tools for one of the world's largest online retailers.</p>
-                            <ul class="timeline-highlights">
-                                <li>Built responsive customer-facing features handling 10M+ daily users</li>
-                                <li>Reduced page load time by 30% through performance optimization</li>
-                                <li>Implemented automated testing covering 90% of codebase</li>
-                                <li>Worked in agile environment with cross-functional teams</li>
-                            </ul>
-                            <div class="tech-used">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">AWS</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Frontend Developer</h3>
-                            <h4>Microsoft</h4>
-                            <span class="timeline-date">2018 - 2020</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Developed user interfaces for enterprise applications and contributed to design system components.</p>
-                            <ul class="timeline-highlights">
-                                <li>Created reusable React components used across multiple projects</li>
-                                <li>Improved accessibility compliance meeting WCAG 2.1 standards</li>
-                                <li>Collaborated with backend teams on API design and integration</li>
-                                <li>Participated in code reviews and technical documentation</li>
-                            </ul>
-                            <div class="tech-used">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Redux</span>
-                                <span class="tech-tag">SASS</span>
-                                <span class="tech-tag">Jest</span>
-                                <span class="tech-tag">REST APIs</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Junior Web Developer</h3>
-                            <h4>Tech Startup Inc.</h4>
-                            <span class="timeline-date">2017 - 2018</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Built and maintained client websites and web applications in a fast-paced startup environment.</p>
-                            <ul class="timeline-highlights">
-                                <li>Developed 15+ responsive websites for various clients</li>
-                                <li>Implemented SEO best practices improving client search rankings</li>
-                                <li>Worked closely with designers to implement pixel-perfect designs</li>
-                                <li>Managed deployment and hosting for client projects</li>
-                            </ul>
-                            <div class="tech-used">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">HTML/CSS</span>
                                 <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">Livewire</span>
                                 <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Plesk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Junior Developer</h3>
+                            <h4>Rapid IT</h4>
+                            <span class="timeline-date">2021 - 2022</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Assisted in developing and maintaining responsive websites and web applications to enhance functionality and user experience.</p>
+                            <ul class="timeline-highlights">
+                                <li>Collaborated on building reusable components and modules for future projects</li>
+                                <li>Supported UI/UX design improvements and frontend optimization</li>
+                                <li>Assisted in writing and maintaining automated tests for core features</li>
+                                <li>Contributed to agile development processes and code reviews</li>
+                            </ul>
+                            <div class="tech-used">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">cPanel</span>
                             </div>
                         </div>
                     </div>
@@ -359,20 +422,23 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <!-- action="https://formspree.io/f/mblpnlrp" -->
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="7a35bb6c-50af-477a-abf8-05103a7551f4">
+                        <input type="checkbox" name="botcheck" id="" style="display: none;">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn" id="sendEmailBtn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -393,154 +459,112 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particles.custom.js"></script>
+    <script src="assets/js/swal.min.js"></script>
+    <script src="assets/js/email.sender.js"></script>
+
     <script>
-        // Particles.js initialization
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#6c63ff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5, random: true },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#6c63ff",
-                    opacity: 0.4,
-                    width: 1
+        //$(document).ready(function () {});
+        function comingSoon() {
+            Swal.fire({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
                 },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "repulse" },
-                    onclick: { enable: true, mode: "push" },
-                    resize: true
-                }
-            }
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', function () {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Click effect
-        document.addEventListener('click', function (e) {
-            const clickEffect = document.createElement('div');
-            clickEffect.className = 'click-effect';
-            clickEffect.style.left = e.clientX + 'px';
-            clickEffect.style.top = e.clientY + 'px';
-            document.body.appendChild(clickEffect);
-
-            setTimeout(() => {
-                clickEffect.remove();
-            }, 500);
-        });
-
-        // Mouse effect
-        function spark(event) {
-            let i = document.createElement("s");
-            i.style.left = event.pageX + "px";
-            i.style.top = event.pageY + "px";
-
-            // Randomly scale the element
-            i.style.transform = `scale(${Math.random() * 2 + 1})`;
-
-            // Set random transition values
-            i.style.setProperty("--x", getRandomTransitionValue());
-            i.style.setProperty("--y", getRandomTransitionValue());
-            document.body.appendChild(i);
-            setTimeout(() => {
-                document.body.removeChild(i);
-            }, 2000);
-        };
-
-        function getRandomTransitionValue() {
-            return `${Math.random() * 400 - 200}px`;
+                title: 'Coming Soon!',
+                icon: 'success',
+            })
         }
-        document.addEventListener("mousemove", spark);
-
-
-        // Dragging effect
-        let isDragging = false;
-        let startX, scrollLeft;
-        const container = document.querySelector('.container');
-
-        document.addEventListener('mousedown', (e) => {
-            isDragging = true;
-            startX = e.pageX;
-            scrollLeft = window.pageXOffset;
-            document.body.style.cursor = 'grabbing';
-        });
-
-        document.addEventListener('mouseleave', () => {
-            isDragging = false;
-            document.body.style.cursor = 'default';
-        });
-
-        document.addEventListener('mouseup', () => {
-            isDragging = false;
-            document.body.style.cursor = 'default';
-        });
-
-        document.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-            const x = e.pageX;
-            const walk = (x - startX) * 2;
-            window.scrollTo(scrollLeft - walk, window.pageYOffset);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
     </script>
+    <script>
+        // Project gallery data - you can easily add more images here
+        const projectGalleries = [
+            // Ecommerce Platform
+            [
+                "assets/projects/ecommerce/1.jpg",
+                "assets/projects/ecommerce/2.jpg",
+                "assets/projects/ecommerce/3.jpg",
+                "assets/projects/ecommerce/4.jpg",
+                "assets/projects/ecommerce/5.jpg",
+                "assets/projects/ecommerce/6.jpg",
+                "assets/projects/ecommerce/7.jpg",
+                "assets/projects/ecommerce/8.jpg",
+                "assets/projects/ecommerce/9.jpg",
+                "assets/projects/ecommerce/10.jpg",
+                "assets/projects/ecommerce/11.jpg",
+                "assets/projects/ecommerce/12.jpg",
+                "assets/projects/ecommerce/13.jpg",
+                "assets/projects/ecommerce/14.jpg",
+                "assets/projects/ecommerce/15.jpg",
+                "assets/projects/ecommerce/16.jpg"
+            ],
+            // Trade Commerce
+            [
+                "assets/projects/erp-tc/1.jpg",
+                "assets/projects/erp-tc/2.jpg",
+                "assets/projects/erp-tc/3.jpg",
+                "assets/projects/erp-tc/4.jpg",
+                "assets/projects/erp-tc/5.jpg",
+                "assets/projects/erp-tc/6.jpg",
+                "assets/projects/erp-tc/7.jpg",
+                "assets/projects/erp-tc/8.jpg",
+                "assets/projects/erp-tc/9.jpg",
+                "assets/projects/erp-tc/10.jpg",
+                "assets/projects/erp-tc/11.jpg",
+                "assets/projects/erp-tc/12.jpg",
+                "assets/projects/erp-tc/13.jpg",
+                "assets/projects/erp-tc/14.jpg",
+                "assets/projects/erp-tc/15.jpg"
+            ],
+            // Point Of Sale | Management
+            [
+                "assets/projects/pos/logo.png",
+                "assets/projects/pos/login-page.jpg",
+                "assets/projects/pos/signin-page.jpg",
+                "assets/projects/pos/dashboard.jpg",
+                "assets/projects/pos/customer.jpg",
+                "assets/projects/pos/customer-create.jpg",
+                "assets/projects/pos/category.jpg",
+                "assets/projects/pos/product-create.jpg",
+                "assets/projects/pos/pos-view.jpg",
+                "assets/projects/pos/invoice-list.jpg",
+                "assets/projects/pos/report-download.jpg",
+                "assets/projects/pos/profile.jpg",
+            ],
+            // Nextgen ERP
+            [
+                "assets/projects/erp/1.jpg",
+                "assets/projects/erp/2.jpg",
+                "assets/projects/erp/3.jpg",
+                "assets/projects/erp/4.jpg",
+                "assets/projects/erp/5.jpg",
+                "assets/projects/erp/6.jpg",
+                "assets/projects/erp/7.jpg",
+                "assets/projects/erp/8.jpg",
+                "assets/projects/erp/9.jpg",
+                "assets/projects/erp/10.jpg",
+                "assets/projects/erp/11.jpg",
+                "assets/projects/erp/12.jpg",
+            ],
+            // Weather Dashboard
+            [
+                "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&q=80",
+                "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=1200&q=80",
+                "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=1200&q=80",
+                "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1200&q=80",
+                "https://images.unsplash.com/photo-1561553543-4e2619057635?w=1200&q=80",
+                "https://images.unsplash.com/photo-1613323593608-abc90fec84ff?w=1200&q=80"
+            ]
+        ];
+    </script>
+    <script src="assets/js/lightbox.custom.js"></script>
 </body>
 
 </html>
