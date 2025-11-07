@@ -173,6 +173,7 @@ header.scrolled {
 /* Sections */
 section {
     padding: 100px 0;
+    padding-top: 0 !important;
 }
 
 .section-title {
