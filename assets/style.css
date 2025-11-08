@@ -494,6 +494,10 @@ section {
 }
 
 /* Experience Section */
+.experience {
+    /* background-color: rgba(26, 26, 46, 0.9); */
+}
+
 .timeline {
     position: relative;
     max-width: 1000px;
@@ -669,6 +673,10 @@ section {
 }
 
 /* Education Section */
+.education {
+    /* background-color: rgba(26, 26, 46, 0.7); */
+}
+
 .education-content {
     max-width: 800px;
     margin: 0 auto;
