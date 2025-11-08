@@ -669,10 +669,6 @@ section {
 }
 
 /* Education Section */
-.education {
-    background-color: rgba(26, 26, 46, 0.7);
-}
-
 .education-content {
     max-width: 800px;
     margin: 0 auto;
